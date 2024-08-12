@@ -1,12 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
 import ResumePage from "./pages/ResumePage";
 import "./App.css";
 
@@ -14,17 +12,15 @@ function App() {
   return (
     <Router>
       <Header />
-      <Navbar />
       <Routes>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/projects" component={ProjectsPage} />
-        <Route exact path="/resume" component={ResumePage} />
-        <Route exact path="/contact" component={ContactPage} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/resume" element={<ResumePage />} />
       </Routes>
       <Footer />
     </Router>
   );
-} // end App
+}
 
 export default App;

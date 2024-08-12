@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
+import Projects from "../components/Projects";
 
 const ProjectsPage = () => {
   return (
-    <div>
-      <h1>My Projects</h1>
-      <p>This is the projects page.</p>
+    <div className="projects-page">
+      <Projects />
     </div>
   );
 };

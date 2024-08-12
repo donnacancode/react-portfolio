@@ -1,6 +1,7 @@
+// src/components/ContactForm.jsx
 import React, { useState } from "react";
 
-const ContactForm = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,39 +19,51 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact">
-      <h2>Get in Touch!</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </label>
-        <button type="submit">Send</button>
-      </form>
+    <section className="contact-container">
+      <div className="contact-card">
+        <h2>Get in Touch!</h2>
+        <form onSubmit={handleSubmit} autoComplete="on">
+          <div className="form-inline-group">
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                autoComplete="name"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                autoComplete="email"
+              />
+            </div>
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              autoComplete="off"
+            />
+          </div>
+          <button type="submit" className="submit-button">
+            Send
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
 
-export default ContactForm;
+export default Contact;

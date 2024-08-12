@@ -1,3 +1,4 @@
+// src/components/Projects.jsx
 import React from "react";
 
 const projects = [
@@ -5,35 +6,48 @@ const projects = [
     id: 1,
     name: "Project 1",
     description: "This is a description of Project 1.",
-    link: "#",
   },
   {
     id: 2,
     name: "Project 2",
     description: "This is a description of Project 2.",
-    link: "#",
   },
   {
     id: 3,
     name: "Project 3",
     description: "This is a description of Project 3.",
-    link: "#",
+  },
+  {
+    id: 4,
+    name: "Project 4",
+    description: "This is a description of Project 4.",
+  },
+  {
+    id: 5,
+    name: "Project 5",
+    description: "This is a description of Project 5.",
+  },
+  {
+    id: 6,
+    name: "Project 6",
+    description: "This is a description of Project 6.",
   },
 ];
 
-const Projects = () => {
+function Projects() {
   return (
-    <section className="projects">
-      <h2>A Few Things I've Worked On...</h2>
-      <div className="projects-list">
-        {Projects.map((project) => (
-          <div key={project.id} className="project">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.link}>Check it out!</a>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="projects-container">
+      {projects.map((project, index) => (
+        <div
+          key={project.id}
+          className={`project-card ${index % 2 === 0 ? "left" : "right"}`}
+        >
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+        </div>
+      ))}
+    </div>
   );
-};
+}
+
+export default Projects;

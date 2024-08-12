@@ -1,10 +1,13 @@
+// src/pages/HomePage.jsx
 import React from "react";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the home page.</p>
+      <About />
     </div>
   );
 };

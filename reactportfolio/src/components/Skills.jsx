@@ -1,17 +1,38 @@
-// src/components/Skills.jsx
 import React from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaNodeJs,
+  FaServer,
+  FaDatabase,
+} from "react-icons/fa";
 
-const skills = ["JavaScript", "React", "Node.js", "CSS"];
+const skills = [
+  { name: "HTML", icon: <FaHtml5 /> },
+  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <FaJsSquare /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "Express.js", icon: <FaServer /> },
+  { name: "MongoDB", icon: <FaDatabase /> },
+  { name: "SQL", icon: <FaDatabase /> },
+];
 
 const Skills = () => {
   return (
-    <section className="skills">
-      <h2>Know-How:</h2>
-      <ul>
-        {skills.map((skill) => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
+    <section id="skills" className="skills-container">
+      <div className="skills-card">
+        <h2>Know-How:</h2>
+        <ul className="skills-list">
+          {skills.map((skill, index) => (
+            <li key={index} className="skill-item">
+              {skill.icon} <span>{skill.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
