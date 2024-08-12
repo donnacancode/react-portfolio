@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills-container">
       <div className="skills-card">
-        <h2>Know-How:</h2>
+        <h2>Proficiencies:</h2>
         <ul className="skills-list">
           {skills.map((skill, index) => (
             <li key={index} className="skill-item">

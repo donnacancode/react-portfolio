@@ -1,4 +1,3 @@
-// src/components/ContactForm.jsx
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -23,29 +22,27 @@ const Contact = () => {
       <div className="contact-card">
         <h2>Get in Touch!</h2>
         <form onSubmit={handleSubmit} autoComplete="on">
-          <div className="form-inline-group">
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                autoComplete="name"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                autoComplete="email"
-              />
-            </div>
+          <div className="form-group">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              autoComplete="name"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              autoComplete="email"
+            />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
