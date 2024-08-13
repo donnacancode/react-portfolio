@@ -182,7 +182,7 @@ p {
   color: #007a74;
 }
 
-/* Projects Container Styling */
+/* Projects Container and Card Styling */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
@@ -236,6 +236,31 @@ p {
 
 .project-icon:hover svg {
   color: #007a74; /* Icon color on hover */
+}
+
+/* Project Links Styling */
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-links a {
+  color: #81d8d0; /* Link color */
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.project-links a svg {
+  margin-right: 5px; /* Add some space between the icon and text */
+}
+
+.project-links a:hover {
+  color: #007a74; /* Change link color on hover */
 }
 
 /* Resume Container Styling */

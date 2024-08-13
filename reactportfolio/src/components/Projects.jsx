@@ -14,44 +14,50 @@ import {
   FaNodeJs,
   FaServer,
   FaDatabase,
+  FaExternalLinkAlt,
+  FaGithub,
 } from "react-icons/fa";
 
 const projects = [
   {
     id: 1,
-    name: "A weather app that displays the current weather and five day forecast for your chosen location.",
+    name: "An app that displays the current weather and five day forecast.",
     gif: weather,
-    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />], // Icons for this project
+    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
+    deployedLink: "http://donnaburns.me/weatherapp/",
+    githubLink: "https://github.com/donnacancode/weatherapp",
   },
   {
     id: 2,
     name: "A simple retro-styled number guessing game.",
     gif: guessnumber,
-    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />, <FaReact />], // Icons for this project
+    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
+    deployedLink: "http://donnaburns.me/Guess-the-Number/",
+    githubLink: "https://github.com/donnacancode/Guess-the-Number",
   },
   {
     id: 3,
     name: "Kanban board for managing tasks and projects.",
     gif: kanban,
-    icons: [<FaReact />, <FaNodeJs />, <FaDatabase />], // Icons for this project
+    icons: [<FaReact />, <FaNodeJs />, <FaDatabase />],
+    deployedLink: "http://donnaburns.me/Kanban/",
+    githubLink: "https://github.com/donnacancode/Kanban",
   },
   {
     id: 4,
     name: "Text editor progressive web app with offline support.",
     gif: jate,
-    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />, <FaReact />], // Icons for this project
+    icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />, <FaReact />],
+    deployedLink: "https://text-editor-pwa-1-czyt.onrender.com/",
+    githubLink: "https://github.com/donnacancode/Text-editor-pwa",
   },
   {
     id: 5,
-    name: "My first portfolio website.",
+    name: "My very first portfolio website with HTML and CSS.",
     gif: portfolio1,
-    icons: [
-      <FaHtml5 />,
-      <FaCss3Alt />,
-      <FaJsSquare />,
-      <FaReact />,
-      <FaNodeJs />,
-    ], // Icons for this project
+    icons: [<FaHtml5 />, <FaCss3Alt />],
+    deployedLink: "http://donnaburns.me/Portfolio/",
+    githubLink: "https://github.com/donnacancode/Portfolio",
   },
   {
     id: 6,
@@ -63,7 +69,9 @@ const projects = [
       <FaJsSquare />,
       <FaReact />,
       <FaServer />,
-    ], // Icons for this project
+    ],
+    deployedLink: "http://donnaburns.me/Personal-Blog/",
+    githubLink: "https://github.com/donnacancode/Personal-Blog",
   },
 ];
 
@@ -85,6 +93,22 @@ const Projects = () => {
                 {icon}
               </span>
             ))}
+          </div>
+          <div className="project-links">
+            <a
+              href={project.deployedLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaExternalLinkAlt /> Deployed Project
+            </a>
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub /> GitHub Repository
+            </a>
           </div>
         </div>
       ))}
