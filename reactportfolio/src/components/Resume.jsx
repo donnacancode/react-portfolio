@@ -271,6 +271,16 @@ const Resume = () => {
           </strong>
         </p>
         <p>Bachelor of Arts</p>
+
+        <div className="download-resume">
+          <a
+            href="./assets/DonnaBurnsResume.pdf"
+            download="Donna_Burns_Resume.pdf"
+            className="download-button"
+          >
+            Download my Resume
+          </a>
+        </div>
       </div>
     </section>
   );

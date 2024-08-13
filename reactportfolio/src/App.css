@@ -51,6 +51,13 @@ body {
   color: #81d8d0;
 }
 
+/* Active link styling */
+.active-link {
+  color: #81d8d0;
+  font-weight: bold;
+  border-bottom: 2px solid #81d8d0;
+}
+
 /* General Content Styling */
 .content {
   padding: 40px 20px;
@@ -281,6 +288,29 @@ p {
   text-decoration: underline;
 }
 
+/* Download Resume Button Styling */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #81d8d0;
+  color: #007a74;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #007a74;
+  color: white;
+  border-color: #81d8d0;
+}
+
+.download-resume {
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Contact Card Styling */
 .contact-container {
   display: flex;
@@ -293,11 +323,12 @@ p {
   background-color: rgba(170, 148, 127, 0.9);
   color: white;
   font-weight: bold;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
+  max-width: 600px; /* Increase the max-width to make the form wider */
+  width: 100%; /* Ensure the form takes up the full width available */
   margin: 0 auto;
 }
 
@@ -307,27 +338,21 @@ p {
   text-align: center;
 }
 
-.form-inline-group {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
 .form-group {
-  flex: 1;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .form-group label {
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Add a bit more space between the label and input */
   font-size: 1.2rem;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increase padding for a more substantial input field */
   font-size: 1rem;
   border-radius: 5px;
   border: none;
@@ -349,7 +374,7 @@ p {
 .submit-button {
   display: block;
   width: 100%;
-  padding: 12px 20px;
+  padding: 15px; /* Increase padding for the button */
   font-size: 1.2rem;
   background-color: #81d8d0;
   color: #007a74;
@@ -362,6 +387,13 @@ p {
 .submit-button:hover {
   background-color: #007a74;
   color: white;
+}
+
+/* Error Text Styling */
+.error-text {
+  color: #ff4d4d; /* A red color to highlight errors */
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
 
 /* Footer Styling */
@@ -425,6 +457,11 @@ p {
 
   .form-inline-group {
     flex-direction: column;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 30px;
   }
 }
 

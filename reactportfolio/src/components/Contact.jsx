@@ -7,14 +7,40 @@ const Contact = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email address is invalid";
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      console.log(formData);
+      setErrors({});
+      // Here you can add code to send form data to a server or display a success message
+      alert("Form submitted successfully!");
+    }
   };
 
   return (
@@ -32,6 +58,7 @@ const Contact = () => {
               onChange={handleChange}
               autoComplete="name"
             />
+            {errors.name && <span className="error-text">{errors.name}</span>}
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
@@ -43,6 +70,7 @@ const Contact = () => {
               onChange={handleChange}
               autoComplete="email"
             />
+            {errors.email && <span className="error-text">{errors.email}</span>}
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
@@ -53,6 +81,9 @@ const Contact = () => {
               onChange={handleChange}
               autoComplete="off"
             />
+            {errors.message && (
+              <span className="error-text">{errors.message}</span>
+            )}
           </div>
           <button type="submit" className="submit-button">
             Send
