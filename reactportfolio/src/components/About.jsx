@@ -1,5 +1,6 @@
 // src/components/About.jsx
 import React from "react";
+import profilepic from "../assets/graphics/profilepic.jpg";
 
 const About = () => {
   return (
@@ -21,6 +22,7 @@ const About = () => {
           blend of skills and experience to excel as a Full Stack Developer and
           contribute to innovative web development projects.
         </p>
+        <img src={profilepic} alt="Donna Burns" className="about-image" />
       </div>
     </section>
   );
