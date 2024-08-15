@@ -69,6 +69,7 @@ const Resume = () => {
               conflicts among team members.
             </li>
           </ul>
+          <br />
 
           <h3>Shore Thing Pet Concierge LLC, Highlands, NJ</h3>
           <p>
@@ -110,6 +111,7 @@ const Resume = () => {
               manner.
             </li>
           </ul>
+          <br />
 
           <h3>Roosevelt Island Operating Corporation, New York, NY</h3>
           <p>
@@ -197,6 +199,7 @@ const Resume = () => {
               granted additional staff to turn the area into a “department”.
             </li>
           </ul>
+          <br />
 
           <h3>Equinox Fitness, NYC, New York, NY</h3>
           <p>
@@ -216,16 +219,13 @@ const Resume = () => {
               exceeding their requests.
             </li>
           </ul>
+          <br />
 
           <h3>Chelsea Piers, NYC, New York, NY</h3>
           <p>
             <strong>Operations Manager</strong> (December 2005 – June 2006)
           </p>
           <ul>
-            <li>
-              Interacted with members and guests to ensure customer
-              satisfaction.
-            </li>
             <li>
               Improvised solutions to both routine and unusual problems that
               occurred.
@@ -239,7 +239,12 @@ const Resume = () => {
               Developed new recreational programs for current and prospective
               members.
             </li>
+            <li>
+              Interacted with members and guests to ensure customer
+              satisfaction.
+            </li>
           </ul>
+          <br />
 
           <h3>Rutgers College Recreation, Piscataway, NJ</h3>
           <p>
