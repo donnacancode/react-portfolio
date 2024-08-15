@@ -6,7 +6,7 @@ const Resume = () => {
       <div className="resume-card">
         <h2>Donna Burns</h2>
         <p>
-          29 S Bay Ave, Highlands, NJ 07732
+          Highlands, NJ
           <br />
           732.347.4297
           <br />
