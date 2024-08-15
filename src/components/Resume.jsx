@@ -17,7 +17,7 @@ const Resume = () => {
 
         <h3>Experience</h3>
         <div className="resume-content">
-          <h4>Ross Brewing Company, Belford, NJ</h4>
+          <h3>Ross Brewing Company, Belford, NJ</h3>
           <p>
             <strong>Admin and Events Manager</strong> (August 2020 – April 2024)
           </p>
@@ -70,7 +70,7 @@ const Resume = () => {
             </li>
           </ul>
 
-          <h4>Shore Thing Pet Concierge LLC, Highlands, NJ</h4>
+          <h3>Shore Thing Pet Concierge LLC, Highlands, NJ</h3>
           <p>
             <strong>Owner</strong> (January 2020 – Present)
           </p>
@@ -111,7 +111,7 @@ const Resume = () => {
             </li>
           </ul>
 
-          <h4>Roosevelt Island Operating Corporation, New York, NY</h4>
+          <h3>Roosevelt Island Operating Corporation, New York, NY</h3>
           <p>
             <strong>Program Manager</strong> (April 2014 – August 2019)
           </p>
@@ -198,7 +198,7 @@ const Resume = () => {
             </li>
           </ul>
 
-          <h4>Equinox Fitness, NYC, New York, NY</h4>
+          <h3>Equinox Fitness, NYC, New York, NY</h3>
           <p>
             <strong>Membership Advisor</strong> (June 2006 – December 2006)
           </p>
@@ -217,7 +217,7 @@ const Resume = () => {
             </li>
           </ul>
 
-          <h4>Chelsea Piers, NYC, New York, NY</h4>
+          <h3>Chelsea Piers, NYC, New York, NY</h3>
           <p>
             <strong>Operations Manager</strong> (December 2005 – June 2006)
           </p>
@@ -241,7 +241,7 @@ const Resume = () => {
             </li>
           </ul>
 
-          <h4>Rutgers College Recreation, Piscataway, NJ</h4>
+          <h3>Rutgers College Recreation, Piscataway, NJ</h3>
           <p>
             <strong>Building Manager</strong> (September 2001 – December 2005)
           </p>
