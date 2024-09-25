@@ -24,7 +24,7 @@ const projects = [
     name: "An app that displays the current weather and five day forecast.",
     gif: weather,
     icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
-    deployedLink: "http://donnaburns.me/weatherapp/",
+    deployedLink: "https://donnacancode.github.io/weatherapp/",
     githubLink: "https://github.com/donnacancode/weatherapp",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     name: "A simple retro-styled number guessing game.",
     gif: guessnumber,
     icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
-    deployedLink: "http://donnaburns.me/Guess-the-Number/",
+    deployedLink: "https://donnacancode.github.io/Guess-the-Number/",
     githubLink: "https://github.com/donnacancode/Guess-the-Number",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     name: "Kanban board for managing tasks and projects.",
     gif: kanban,
     icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
-    deployedLink: "http://donnaburns.me/Kanban/",
+    deployedLink: "https://donnacancode.github.io/Kanban/",
     githubLink: "https://github.com/donnacancode/Kanban",
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     name: "My very first portfolio website with HTML and CSS.",
     gif: portfolio1,
     icons: [<FaHtml5 />, <FaCss3Alt />],
-    deployedLink: "http://donnaburns.me/Portfolio/",
+    deployedLink: "https://donnacancode.github.io/Portfolio/",
     githubLink: "https://github.com/donnacancode/Portfolio",
   },
   {
@@ -70,7 +70,7 @@ const projects = [
     name: "A simple personal blog that utilizes local storage.",
     gif: blog,
     icons: [<FaHtml5 />, <FaCss3Alt />, <FaJsSquare />],
-    deployedLink: "http://donnaburns.me/Personal-Blog/",
+    deployedLink: "https://donnacancode.github.io/Personal-Blog/",
     githubLink: "https://github.com/donnacancode/Personal-Blog",
   },
 ];
