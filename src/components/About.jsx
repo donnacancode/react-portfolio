@@ -8,10 +8,14 @@ const About = () => {
       <div className="about-card">
         <h2>About Me</h2>
         <p>
-          I am an aspiring Full Stack Developer currently immersed in a
-          comprehensive Full Stack Web Development Bootcamp. This intensive
-          program is equipping me with cutting-edge skills in HTML, CSS,
-          JavaScript, Node.js, Express.js, React.js, SQL, MongoDB, and more.
+          I am a Full Stack Developer with a passion for creating dynamic and
+          engaging web applications! I recently completed the Rutgers
+          University/EdX comprehensive Full Stack Web Development Bootcamp. This
+          intensive program has equipped me with cutting-edge skills in HTML,
+          CSS, JavaScript, Node.js, Express.js, React.js, SQL, MongoDB, and
+          more. I absolutely love the creativity and problem-solving that web
+          development requires, and I am excited to continue learning and
+          growing in this field!
         </p>
         <p>
           Before officially beginning my tech journey, I spent two decades
