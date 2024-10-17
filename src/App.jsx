@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ResumePage from "./pages/ResumePage";
+import SiteCounter from "./components/SiteCounter";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/resume" element={<ResumePage />} />
       </Routes>
       <Footer />
+      <SiteCounter />
     </Router>
   );
 }
